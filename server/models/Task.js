@@ -17,7 +17,7 @@ const TaskSchema = new Schema({
     default: false
   },
   dateRealized: {
-    type: Number,
+    type: String,
     required: true
   },
   description: {

@@ -21,7 +21,7 @@ angular.module('tasksAgend')
         
         $location.path('/listTasks')
       }
-      $scope.selectUserA = function () {
+      $scope.selectUserS = function () {
         $rootScope.userName = 'Sergio'
         
         $location.path('/listTasks')

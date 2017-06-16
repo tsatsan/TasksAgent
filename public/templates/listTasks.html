@@ -9,7 +9,7 @@
                     </a>
                 </div>
                 <h4 class="nav-list-tasks">List Tasks</h4>
-                <a class="login-list-tasks" href="/#/startUsers">{{ userName }}  <i class="fa fa-user-o" aria-hidden="true"></i></a> 
+                <a class="login-list-tasks" href="/#/startUsers">{{ userName }}  <i class="fa fa-user-o" aria-hidden="true"></i></a>
             </div>
         </div>
     </nav>
@@ -41,15 +41,15 @@
     <div class="date">
         <h2 ng-bind="selectedDay | date:'dd/MM/yyyy'" ng-hide="calendar==true">{{selectedDay}}</h2>
         <form>
-             <div class="calendar"> 
-              <div class="input-date"> 
-                <input ng-click="selectNewDate()" ng-show="calendar==true" type="date"  ng-model="selectedDay">
+             <div class="calendar">
+              <div class="input-date">
+                <input ng-click="selectNewDate()" ng-show="calendar==true" type="text"  ng-model="selectedDayFormatted">
               </div>
               <i class="btn fa fa-calendar fa-3x" aria-hidden="true" ng-click=" showCalendarInput()"></i></input>
             </div>
             </form>
     </div>
-   
+
     <footer>
         <div class="container-adjust">
             <div class="addTask">

@@ -3,7 +3,7 @@ const moment = require('moment')
 
 function addTask (req, res) {
   let {title, userName, userName2, description, dateRealized} = req.body
-  dateRealized = moment(+dateRealized).valueOf()
+  dateRealized = moment(dateRealized).format('DD/MM/YYYY')
   const newTask = new Task({title, userName, userName2, description, dateRealized})
 
   newTask.save()

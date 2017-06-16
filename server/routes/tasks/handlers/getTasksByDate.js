@@ -3,15 +3,15 @@ const moment = require('moment')
 
 function getTasksByDate (req, res) {
   let { timestamp: dayToLocate } = req.params
-  dayToLocate = +dayToLocate
+  formattedDayToLocate = moment(+dayToLocate).format('DD/MM/YYYY')
 
-  const dayAfter = moment(dayToLocate).add(1, 'day').valueOf()
+  // const dayAfter = moment(dayToLocate).add(1, 'day').valueOf() + 1
+
+  // console.log('dayToLocate => ' + dayToLocate);
+  // console.log('dayAfter => ' + dayAfter);
 
   const query = {
-    'dateRealized': {
-      '$gte': dayToLocate,
-      '$lt': dayAfter
-    }
+    'dateRealized': formattedDayToLocate
   }
   Task.find(query)
     .then(task => {

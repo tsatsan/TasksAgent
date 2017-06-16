@@ -4,10 +4,10 @@ angular.module('tasksAgend')
           let {userName, userName2, dateRealized, description} = $scope
           dateRealized = moment(+dateRealized).valueOf()
           apiTasksService.addTask({userName, userName2, dateRealized, description})
-          .then(tasks => {
-            $rootScope = {userName, userName2, dateRealized, description}
-            $scope.tasks = tasks
-            $location.path('/listTasks', $scope.tasks)
-          })
+	          .then(tasks => {
+	            // $rootScope = {userName, userName2, dateRealized, description}
+	            // $scope.tasks = tasks
+	            $location.path('/listTasks')
+	          })
         }
       })

@@ -1,7 +1,18 @@
 angular.module('tasksAgend')
     .controller('tasksController', function($scope, $timeout, apiTasksService, $rootScope, $location, $window) {
       const today = +new Date()
+
+      $scope.$watch(
+			    'selectedDay',
+			    function (newSelectedDay, oldSelectedDay) {
+			        $scope.selectedDayFormatted = moment(newSelectedDay).format('DD/MM/YYYY')
+			     },
+			    true
+			);
+
       $scope.selectedDay = today
+
+			getAllTasksByDate()
 
       function getAllTasksByDate() {
         apiTasksService.getTaskByDate($scope.selectedDay)
@@ -25,7 +36,6 @@ angular.module('tasksAgend')
       $scope.selectNewDate = function() {
         const newDateCalendar = $scope.selectedDay - today
         const daysPassToday = moment.duration(newDateCalendar).days()
-        console.log(daysPassToday)
         $scope.selectedDay = moment($scope.selectedDay).add(daysPassToday, 'days').valueOf()
         apiTasksService.getTaskByDate($scope.selectedDay)
           .then(tasks => $scope.tasks = tasks)

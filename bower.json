@@ -1,17 +1,17 @@
 {
-  "name": "demo-heroku-website",
+  "name": "TasksAgent",
   "description": "",
-  "main": "index.js",
+  "main": "",
   "authors": [
-    "Tsatsan <jordicostafigueras@gmail.com>"
+    "JuanMa Garrido <JuanMa.Garrido@gmail.com>"
   ],
   "license": "ISC",
-  "homepage": "https://github.com/tsatsan/final-project",
+  "homepage": "https://github.com/tsatsan/TasksAgent",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
-    "public/bower_components",
+    "client/bower_components",
     "test",
     "tests"
   ],
