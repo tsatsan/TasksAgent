@@ -55,6 +55,12 @@ You need to create an **.env** file in the project root with the following envir
 ## Authors
 [Jordi Costa](https://github.com/Tsatsan)
 
+## Acknowledgments
+
+Alejandro DG
+JuanMa Garrido
+Foursquare
+
 ## References
 - [trello](http://trello.com/)
 
