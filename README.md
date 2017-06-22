@@ -56,9 +56,9 @@ You need to create an **.env** file in the project root with the following envir
 [Jordi Costa](https://github.com/Tsatsan)
 
 ## Acknowledgments
-    -[SkylabCoders](https://www.skylabcoders.com)
-    -[Alejandro DG](https://github.com/agandia9)
-    -[JuanMa Garrido](https://github.com/juanmaguitar)
+   -[SkylabCoders](https://www.skylabcoders.com)
+   -[Alejandro DG](https://github.com/agandia9)
+   -[JuanMa Garrido](https://github.com/juanmaguitar)
 
 ## References
 - [trello](http://trello.com/)
