@@ -57,9 +57,8 @@ You need to create an **.env** file in the project root with the following envir
 
 ## Acknowledgments
 
-Alejandro DG
-JuanMa Garrido
-Foursquare
+[Alejandro DG](https://github.com/agandia9)
+[JuanMa Garrido](https://github.com/juanmaguitar)
 
 ## References
 - [trello](http://trello.com/)
